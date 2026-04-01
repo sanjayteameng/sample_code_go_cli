@@ -120,12 +120,12 @@ func handleTelnet(conn net.Conn) {
 	}
 
 	fmt.Fprint(conn, "\r\nWelcome to sample_go_code over Telnet\r\n")
-	runSession(reader, conn, "sample-telnet> ", "\r\n")
+	runSession(reader, conn, "TE-Telnet =>> ", "\r\n")
 }
 
 func runLocalCLI(in io.Reader, out io.Writer) {
 	fmt.Fprintln(out, "sample_go_code local CLI")
-	runSession(bufio.NewReader(in), out, "sample> ", "\n")
+	runSession(bufio.NewReader(in), out, "TE-CLI> ", "\n")
 }
 
 func runSession(reader *bufio.Reader, out io.Writer, prompt, newline string) {
