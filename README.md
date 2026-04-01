@@ -1,6 +1,6 @@
 # sample_go_code
 
-This is a very small Go sample meant for first-time Go readers.
+This is a small Go sample code
 
 It keeps the idea simple:
 - one file: `main.go`
